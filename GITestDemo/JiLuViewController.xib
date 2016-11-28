@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JiLuViewController">
+            <connections>
+                <outlet property="snBtn" destination="OeY-Gt-SY7" id="vAi-6j-LlY"/>
+                <outlet property="snTableView" destination="uO1-Rf-r4L" id="19z-Oy-LME"/>
+                <outlet property="snTableViewHeight" destination="Ohn-zN-3z3" id="mic-ou-PfO"/>
+                <outlet property="tableView" destination="YeF-Es-acg" id="6uM-7s-Gcb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="YeF-Es-acg">
+                    <rect key="frame" x="0.0" y="100" width="320" height="468"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeY-Gt-SY7">
+                    <rect key="frame" x="84" y="65" width="152" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="cqI-Dq-Rsr"/>
+                        <constraint firstAttribute="width" constant="152" id="ks4-wp-VKi"/>
+                    </constraints>
+                    <state key="normal" title="点击选择设备"/>
+                    <connections>
+                        <action selector="btnChick:" destination="-1" eventType="touchUpInside" id="ft0-OC-ZiI"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="30" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="uO1-Rf-r4L">
+                    <rect key="frame" x="84" y="104" width="152" height="122"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="122" id="Ohn-zN-3z3"/>
+                        <constraint firstAttribute="width" constant="152" id="Y4a-nh-2bI"/>
+                    </constraints>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="YeF-Es-acg" secondAttribute="bottom" id="45N-pc-soG"/>
+                <constraint firstItem="uO1-Rf-r4L" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="C5C-PZ-LCC"/>
+                <constraint firstItem="uO1-Rf-r4L" firstAttribute="top" secondItem="OeY-Gt-SY7" secondAttribute="bottom" constant="9" id="DiN-Wl-cW7"/>
+                <constraint firstItem="YeF-Es-acg" firstAttribute="top" secondItem="OeY-Gt-SY7" secondAttribute="bottom" constant="5" id="IlI-jV-xWH"/>
+                <constraint firstAttribute="trailing" secondItem="YeF-Es-acg" secondAttribute="trailing" id="iJS-lH-8xf"/>
+                <constraint firstItem="OeY-Gt-SY7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="lEy-hC-aEu"/>
+                <constraint firstItem="YeF-Es-acg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wyA-0s-L1a"/>
+                <constraint firstItem="OeY-Gt-SY7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zsQ-5L-dV2"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="412" y="250"/>
+        </view>
+    </objects>
+</document>

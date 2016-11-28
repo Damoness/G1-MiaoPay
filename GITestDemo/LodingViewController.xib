@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LodingViewController">
+            <connections>
+                <outlet property="imageV" destination="Pfh-n7-oi0" id="R4V-Uv-rbJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_loading" translatesAutoresizingMaskIntoConstraints="NO" id="Pfh-n7-oi0">
+                    <rect key="frame" x="250" y="250" width="100" height="100"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="5Ju-Mj-JUZ"/>
+                        <constraint firstAttribute="width" constant="100" id="80N-rD-MvX"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading......" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wc-vF-M2Z">
+                    <rect key="frame" x="230" y="380" width="140" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="41V-PT-wJA"/>
+                        <constraint firstAttribute="width" constant="140" id="PZd-oV-s6s"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4wc-vF-M2Z" firstAttribute="top" secondItem="Pfh-n7-oi0" secondAttribute="bottom" constant="30" id="7iV-kN-oV3"/>
+                <constraint firstAttribute="centerX" secondItem="4wc-vF-M2Z" secondAttribute="centerX" id="Be2-Ft-9sn"/>
+                <constraint firstAttribute="centerY" secondItem="Pfh-n7-oi0" secondAttribute="centerY" id="CUH-u4-L5v"/>
+                <constraint firstAttribute="centerX" secondItem="Pfh-n7-oi0" secondAttribute="centerX" id="dym-XC-8Aw"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo_loading" width="142" height="142"/>
+    </resources>
+</document>

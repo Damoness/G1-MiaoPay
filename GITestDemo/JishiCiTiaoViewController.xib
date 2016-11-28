@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JishiCiTiaoViewController">
+            <connections>
+                <outlet property="shenfenzhenghao" destination="gck-S5-qoF" id="b2A-F9-4SI"/>
+                <outlet property="shoujihao" destination="PDV-BA-gI6" id="OBZ-OX-aUE"/>
+                <outlet property="tableHeight" destination="2hf-Hj-qXe" id="eSw-g0-64X"/>
+                <outlet property="tableView" destination="Csg-7Z-agK" id="J69-4I-3pH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="xingming" destination="RdK-Sb-sFc" id="eLk-yk-82N"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="请输入您的姓名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RdK-Sb-sFc">
+                    <rect key="frame" x="30" y="100" width="540" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="mhr-BE-NL4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="请输入您的身份证号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gck-S5-qoF">
+                    <rect key="frame" x="30" y="138" width="540" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="k7V-1a-zTc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="请输入银行预留手机号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PDV-BA-gI6">
+                    <rect key="frame" x="30" y="176" width="540" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="07N-ur-6IO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UrM-SN-Y1R">
+                    <rect key="frame" x="202" y="298" width="197" height="42"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.25098039220000001" green="0.51372549020000002" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="C85-RU-W45"/>
+                        <constraint firstAttribute="width" constant="197" id="WSA-NX-4SP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="确认">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="queren:" destination="-1" eventType="touchUpInside" id="jYf-EX-8bm"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="40" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Csg-7Z-agK">
+                    <rect key="frame" x="30" y="168" width="540" height="100"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="2hf-Hj-qXe"/>
+                    </constraints>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="RdK-Sb-sFc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="78P-St-VTd"/>
+                <constraint firstItem="Csg-7Z-agK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="9qR-yv-fgm"/>
+                <constraint firstAttribute="trailing" secondItem="Csg-7Z-agK" secondAttribute="trailing" constant="30" id="EeC-KQ-cYF"/>
+                <constraint firstAttribute="trailing" secondItem="gck-S5-qoF" secondAttribute="trailing" constant="30" id="FcH-uq-0h5"/>
+                <constraint firstItem="PDV-BA-gI6" firstAttribute="top" secondItem="gck-S5-qoF" secondAttribute="bottom" constant="8" id="HSU-jA-2aP"/>
+                <constraint firstItem="gck-S5-qoF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="RdZ-FK-abG"/>
+                <constraint firstItem="UrM-SN-Y1R" firstAttribute="top" secondItem="PDV-BA-gI6" secondAttribute="bottom" constant="92" id="SNx-RL-pzb"/>
+                <constraint firstAttribute="trailing" secondItem="RdK-Sb-sFc" secondAttribute="trailing" constant="30" id="Xa7-ow-MUj"/>
+                <constraint firstItem="PDV-BA-gI6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="hWG-PR-USt"/>
+                <constraint firstAttribute="centerX" secondItem="UrM-SN-Y1R" secondAttribute="centerX" id="k0g-18-HyT"/>
+                <constraint firstItem="gck-S5-qoF" firstAttribute="top" secondItem="RdK-Sb-sFc" secondAttribute="bottom" constant="8" id="n4f-lT-CEk"/>
+                <constraint firstItem="RdK-Sb-sFc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="nZl-jZ-NMO"/>
+                <constraint firstAttribute="trailing" secondItem="PDV-BA-gI6" secondAttribute="trailing" constant="30" id="xDY-gJ-gmb"/>
+                <constraint firstItem="Csg-7Z-agK" firstAttribute="top" secondItem="gck-S5-qoF" secondAttribute="bottom" id="zJq-xo-FRL"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

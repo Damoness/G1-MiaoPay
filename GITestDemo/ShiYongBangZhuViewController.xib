@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShiYongBangZhuViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="xiaoyuandian1" destination="SHc-Vu-3gz" id="EZe-20-YPq"/>
+                <outlet property="xiaoyuandian2" destination="LNS-Jv-ISK" id="aNe-mj-Zp0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MaH-ip-Spt">
+                    <rect key="frame" x="19" y="207" width="282" height="116"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNS-Jv-ISK">
+                            <rect key="frame" x="3" y="11" width="15" height="15"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="OWW-If-gcS"/>
+                                <constraint firstAttribute="width" constant="15" id="uVu-1R-ZMl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Okv-Dv-BDO">
+                            <rect key="frame" x="28" y="8" width="246" height="108"/>
+                            <animations/>
+                            <string key="text">修改结算信息
+请联系您的产品销售商，或致电4009688339。
+注：为了资金安全，银行账号信息需要审核后方可生效。在更改银行账号生效期间，所产生的交易将延迟清算，所有未清算资金将会于审核完成后一个工作日进行清算。</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Okv-Dv-BDO" firstAttribute="leading" secondItem="LNS-Jv-ISK" secondAttribute="trailing" constant="10" id="5YQ-fS-xkW"/>
+                        <constraint firstItem="LNS-Jv-ISK" firstAttribute="top" secondItem="MaH-ip-Spt" secondAttribute="top" constant="11" id="7hw-Jd-I2T"/>
+                        <constraint firstAttribute="height" constant="116" id="ddq-vs-tf2"/>
+                        <constraint firstAttribute="bottom" secondItem="Okv-Dv-BDO" secondAttribute="bottom" id="g5s-3m-HV7"/>
+                        <constraint firstAttribute="trailing" secondItem="Okv-Dv-BDO" secondAttribute="trailing" constant="8" id="jfn-Y0-BQs"/>
+                        <constraint firstItem="Okv-Dv-BDO" firstAttribute="top" secondItem="MaH-ip-Spt" secondAttribute="top" constant="8" id="kSI-u4-m7K"/>
+                        <constraint firstItem="LNS-Jv-ISK" firstAttribute="leading" secondItem="MaH-ip-Spt" secondAttribute="leading" constant="3" id="rlg-AG-lB8"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0An-ab-YNy">
+                    <rect key="frame" x="19" y="127" width="282" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHc-Vu-3gz">
+                            <rect key="frame" x="3" y="11" width="15" height="15"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="15" id="3x9-g0-8Jt"/>
+                                <constraint firstAttribute="height" constant="15" id="SyC-Hg-nsz"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="15" id="XlT-sD-loP"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="15" id="c2o-27-ZSy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoS-Bl-qJ0">
+                            <rect key="frame" x="28" y="8" width="246" height="52"/>
+                            <animations/>
+                            <string key="text">修改密码
+请您输入旧密码--&gt;请您输入新密码--&gt;请您再次输入新密码进行确认。</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="SHc-Vu-3gz" firstAttribute="leading" secondItem="0An-ab-YNy" secondAttribute="leading" constant="3" id="Dh2-JJ-tV7"/>
+                        <constraint firstItem="LoS-Bl-qJ0" firstAttribute="leading" secondItem="SHc-Vu-3gz" secondAttribute="trailing" constant="10" id="SB8-Ln-SBQ"/>
+                        <constraint firstAttribute="trailing" secondItem="LoS-Bl-qJ0" secondAttribute="trailing" constant="8" id="UCF-iK-fVH"/>
+                        <constraint firstItem="SHc-Vu-3gz" firstAttribute="top" secondItem="0An-ab-YNy" secondAttribute="top" constant="11" id="gOi-lc-EA9"/>
+                        <constraint firstItem="LoS-Bl-qJ0" firstAttribute="top" secondItem="0An-ab-YNy" secondAttribute="top" constant="8" id="gTg-j6-x3M"/>
+                        <constraint firstAttribute="height" constant="60" id="gpd-hz-dJD"/>
+                        <constraint firstItem="LoS-Bl-qJ0" firstAttribute="leading" secondItem="SHc-Vu-3gz" secondAttribute="trailing" constant="10" id="kAC-iv-YUo"/>
+                        <constraint firstAttribute="bottom" secondItem="LoS-Bl-qJ0" secondAttribute="bottom" id="zko-qx-AVk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0An-ab-YNy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="127" id="10o-mM-LZp"/>
+                <constraint firstItem="0An-ab-YNy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="19" id="9k6-UR-NLW"/>
+                <constraint firstAttribute="trailing" secondItem="0An-ab-YNy" secondAttribute="trailing" constant="19" id="DfD-S1-RYB"/>
+                <constraint firstItem="MaH-ip-Spt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="19" id="Kha-ev-Pe9"/>
+                <constraint firstItem="MaH-ip-Spt" firstAttribute="top" secondItem="0An-ab-YNy" secondAttribute="bottom" constant="20" id="ZvL-4W-4FR"/>
+                <constraint firstAttribute="trailing" secondItem="MaH-ip-Spt" secondAttribute="trailing" constant="19" id="cSD-cw-g1x"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
