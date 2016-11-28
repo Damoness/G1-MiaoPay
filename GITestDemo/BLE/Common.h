@@ -75,13 +75,15 @@ BOOL  isOldUser;      //是否老的登录用户
 #define kDeviceType @"kDeviceType" //设备类型(G1 H1)
 
 
-//秒到正式
+
+
+//秒到正式        //测试账号 18211106106 密码： 123456
 #define kServerIP @"mpos.qimiaolife.com" //注册登录的ip
 #define kServerPort @"18080" //注册登录的端口
+#define kPosIP @"mpos.qimiaolife.com"
 #define kPosPort @"8899"
-#define kPosIP @"122.112.28.20"
 #define kDecryptKey "01CCA5D0712519DE01CCA5D0712519DE"
-
+//#define kPosIP @"122.112.28.20"
 
 #define kPgyerAppID @"d6592e45411274c0b321c22018494519"
 

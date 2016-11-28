@@ -11,6 +11,7 @@
 #import "ServerManager.h"
 #import "Anasis8583Pack.h"
 #import "AFNetworking.h"
+#import "UIUtils.h"
 
 
 #define bleManager [BleManager sharedManager]
@@ -84,6 +85,7 @@ unsigned long GetMsTime(){
 
     return time - firstTime;
 }
+
 int WriteServerData(unsigned char *data, int datalen){
     
     
