@@ -433,10 +433,10 @@
     self.serialQueue = dispatch_queue_create("com.wudi", DISPATCH_QUEUE_SERIAL);
     
   //  NSString *destionation =@"122.112.12.23/mpos";
-    NSString *destionation =@"123.56.106.39/mpos";
-    NSString *username = @"mpos";
-    NSString *password = @"tenmpos123";
-    int  port = 2221;
+    NSString *destionation =@"mpos.qimiaolife.com/mpos";
+    NSString *username = @"mdftp";
+    NSString *password = @"md+-998Mpos";
+    int  port = 21;
     
     for (int i=0; i< 4; i++) {
         NSString *s = strs[i];
